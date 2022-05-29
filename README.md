@@ -10,3 +10,7 @@ https://docs.julialang.org/en/v1/manual/noteworthy-differences/
 
 Orbital propagator
 https://juliaspace.github.io/SatelliteToolbox.jl/stable/man/orbit/propagators/
+
+Lots of other great space related repos
+https://github.com/JuliaSpace
+https://github.com/JuliaAstro
