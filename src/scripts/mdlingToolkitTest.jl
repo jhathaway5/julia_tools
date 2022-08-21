@@ -4,7 +4,10 @@
 # If toolbox doesn't exist
 # using Pkg
 # Pkg.add("ModelingToolkit")
-using ModelingToolkit, OrdinaryDiffEq
+
+# https://mtk.sciml.ai/stable/tutorials/ode_modeling/
+
+using ModelingToolkit, OrdinaryDiffEq, Plots
 
 @parameters t σ ρ β
 @variables x(t) y(t) z(t)
@@ -17,7 +20,7 @@ eqs = [D(D(x)) ~ σ*(y-x),
 @named sys = ODESystem(eqs)
 sys = ode_order_lowering(sys)
 
-u0 = [D(x) => 2.0,
+u0 = [D(x) => 1.5,
       x => 1.0,
       y => 0.0,
       z => 0.0]
